@@ -32,7 +32,7 @@ graph LR
             bqRemoteUdf --> cloudFunction(Cloud Function)
             cloudFunction --> vertexAiApi(Vertex AI API)
         end
-        subgraph Custom Fine Tune Model (Optional)
+        subgraph Custom Fine Tune Model
             llmModel --> bqRemoteUdf
             bqRemoteUdf --> cloudFunction
             cloudFunction --> vertexAiFineTuneModel(Vertex AI Fine-Tune Model)
