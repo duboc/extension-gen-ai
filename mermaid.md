@@ -31,6 +31,6 @@ graph LR
             promptRepository --> lookerSQLService
         end
     end
-    lookerSDK --> Looker API
+    lookerSDK --> LookerAPI
     lookerSQLService --> BigQuery
 ```
